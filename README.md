@@ -18,10 +18,16 @@ To install without replacing your existing `~/.zshrc`:
 sh install.sh
 ```
 
+Or install from GitHub:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/takeedev/dotfiles/refs/heads/main/install.sh | sh
+```
+
 The installer appends this line to `~/.zshrc` once:
 
 ```sh
-. "/path/to/dotfiles/shell/aliases.zsh"
+. "/path/to/aliases.zsh"
 ```
 
 To use them for the current terminal session:
