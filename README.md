@@ -21,7 +21,7 @@ sh install.sh
 Or install from GitHub:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/takeedev/dotfiles/refs/heads/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/takeedev/dotfiles/main/install.sh | sh
 ```
 
 The installer appends this line to `~/.zshrc` once:
