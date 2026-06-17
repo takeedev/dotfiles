@@ -1,3 +1,4 @@
+#git
 alias gs="git status"
 alias ga="git add"
 alias gaa="git add --all"
@@ -12,3 +13,15 @@ alias gcb="git checkout -b"
 alias gd="git diff"
 alias gf="git fetch"
 alias glog="git log --oneline --graph --decorate"
+alias grst="git restore --staged"
+
+#list file
+alias ll="ls -lah"
+alias la="ls -A"
+alias l="ls -CF"
+
+#Navigate file
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias c="clear"
