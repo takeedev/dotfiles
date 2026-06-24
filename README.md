@@ -35,3 +35,11 @@ To use them for the current terminal session:
 ```sh
 source ~/.zshrc
 ```
+
+## Open in IntelliJ IDEA
+
+Open the current directory in a new IntelliJ IDEA instance:
+
+```sh
+open -na "IntelliJ IDEA.app" --args .
+```

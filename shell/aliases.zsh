@@ -25,3 +25,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias c="clear"
+
+#IDE
+alias idea='open -na "IntelliJ IDEA.app" --args .'
