@@ -27,4 +27,38 @@ alias ....="cd ../../.."
 alias c="clear"
 
 #IDE
-alias idea='open -na "IntelliJ IDEA.app" --args .'
+idea() {
+  local target="${1:-.}"
+
+  case "$(uname -s)" in
+    Darwin*)
+      open -na "IntelliJ IDEA.app" --args "$target"
+      ;;
+    Linux*)
+      if whence -p idea >/dev/null 2>&1; then
+        command idea "$target"
+      elif whence -p intellij-idea-ultimate >/dev/null 2>&1; then
+        intellij-idea-ultimate "$target"
+      elif whence -p intellij-idea-community >/dev/null 2>&1; then
+        intellij-idea-community "$target"
+      else
+        printf 'Error: IntelliJ IDEA command-line launcher not found. Add idea to PATH.\n' >&2
+        return 1
+      fi
+      ;;
+    MINGW*|MSYS*|CYGWIN*)
+      if whence -p idea64.exe >/dev/null 2>&1; then
+        idea64.exe "$target"
+      elif whence -p idea.exe >/dev/null 2>&1; then
+        idea.exe "$target"
+      else
+        printf 'Error: idea64.exe or idea.exe not found in PATH.\n' >&2
+        return 1
+      fi
+      ;;
+    *)
+      printf 'Error: unsupported OS for IntelliJ IDEA launcher.\n' >&2
+      return 1
+      ;;
+  esac
+}

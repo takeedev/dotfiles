@@ -38,8 +38,24 @@ source ~/.zshrc
 
 ## Open in IntelliJ IDEA
 
-Open the current directory in a new IntelliJ IDEA instance:
+Open the current directory in IntelliJ IDEA:
 
 ```sh
-open -na "IntelliJ IDEA.app" --args .
+idea
 ```
+
+Or open a specific path:
+
+```sh
+idea /path/to/project
+```
+
+## OS support
+
+This project is designed for Zsh-based shells.
+
+| OS | Status | Notes |
+| --- | --- | --- |
+| macOS | Supported | `install.sh` updates `~/.zshrc`. The `idea` function uses the IntelliJ IDEA macOS app. |
+| Linux | Supported with setup | `install.sh` updates `~/.zshrc`. The `idea` function requires an IntelliJ IDEA launcher such as `idea`, `intellij-idea-ultimate`, or `intellij-idea-community` in `PATH`. |
+| Windows | Partial support | Works in Unix-like shells such as Git Bash, MSYS2, Cygwin, or WSL when Zsh is installed. The `idea` function requires `idea64.exe` or `idea.exe` in `PATH`. It is not designed for PowerShell or Command Prompt. |
