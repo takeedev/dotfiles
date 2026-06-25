@@ -14,6 +14,7 @@ alias gd="git diff"
 alias gf="git fetch"
 alias glog="git log --oneline --graph --decorate"
 alias grst="git restore --staged"
+alias grh="git reset --hard"
 
 #list file
 alias ll="ls -lah"
