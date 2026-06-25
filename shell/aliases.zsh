@@ -1,5 +1,6 @@
 #git
 alias gs="git status"
+alias gsh="git status --short"
 alias ga="git add"
 alias gaa="git add --all"
 alias gc="git commit"
