@@ -4,13 +4,57 @@ Personal configuration files.
 
 ## Shell aliases
 
-Git aliases are stored in `shell/aliases.zsh`:
+Aliases and helper functions are stored in `shell/aliases.zsh`.
 
-```sh
-alias gs="git status"
-alias ga="git add"
-alias gaa="git add --all"
-```
+### Git
+
+| Alias | Command |
+| --- | --- |
+| `gs` | `git status` |
+| `gsh` | `git status --short` |
+| `ga` | `git add` |
+| `gaa` | `git add --all` |
+| `gc` | `git commit` |
+| `gcm` | `git commit -m` |
+| `gcam` | `git commit -am` |
+| `gca` | `git commit --amend` |
+| `gp` | `git push` |
+| `gpf` | `git push --force-with-lease` |
+| `gl` | `git pull` |
+| `gpr` | `git pull --rebase` |
+| `gup` | `git pull --rebase --autostash` |
+| `gb` | `git branch` |
+| `gco` | `git checkout` |
+| `gsw` | `git switch` |
+| `gcb` | `git checkout -b` |
+| `gd` | `git diff` |
+| `gds` | `git diff --staged` |
+| `gf` | `git fetch` |
+| `glog` | `git log --oneline --graph --decorate` |
+| `gll` | `git log --oneline --graph --decorate --all` |
+| `gm` | `git merge` |
+| `grb` | `git rebase` |
+| `gcp` | `git cherry-pick` |
+| `gst` | `git stash` |
+| `gstp` | `git stash pop` |
+| `gstl` | `git stash list` |
+| `grst` | `git restore --staged` |
+| `grh` | `git reset --hard` |
+
+### Files and navigation
+
+| Alias | Command |
+| --- | --- |
+| `ll` | `ls -lah` |
+| `la` | `ls -A` |
+| `l` | `ls -CF` |
+| `..` | `cd ..` |
+| `...` | `cd ../..` |
+| `....` | `cd ../../..` |
+| `c` | `clear` |
+| `mkdirp` | `mkdir -p` |
+| `reload` | `source ~/.zshrc` |
+| `path` | Print each `PATH` entry on its own line |
 
 To install without replacing your existing `~/.zshrc`:
 
