@@ -102,7 +102,7 @@ Or install from GitHub:
 irm https://raw.githubusercontent.com/takeedev/dotfiles/main/install.ps1 | iex
 ```
 
-The installer appends this line to your current user PowerShell profile once:
+The installer appends this line once to your Windows PowerShell and PowerShell 7 user profiles:
 
 ```powershell
 . "C:\path\to\aliases.ps1"
@@ -142,5 +142,5 @@ This project supports Zsh-based shells and PowerShell.
 | --- | --- | --- |
 | macOS | Supported | `install.sh` updates `~/.zshrc`. The `idea` function uses the IntelliJ IDEA macOS app. |
 | Linux | Supported with setup | `install.sh` updates `~/.zshrc`. The `idea` function requires an IntelliJ IDEA launcher such as `idea`, `intellij-idea-ultimate`, or `intellij-idea-community` in `PATH`. |
-| Windows | Supported with PowerShell | `install.ps1` updates your PowerShell profile. The `idea` function requires `idea64.exe`, `idea.exe`, or `idea.cmd` in `PATH`. Unix-like shells such as Git Bash, MSYS2, Cygwin, or WSL can still use the Zsh installer when Zsh is installed. |
+| Windows | Supported with PowerShell | `install.ps1` updates your Windows PowerShell and PowerShell 7 user profiles. The `idea` function requires `idea64.exe`, `idea.exe`, or `idea.cmd` in `PATH`. Unix-like shells such as Git Bash, MSYS2, Cygwin, or WSL can still use the Zsh installer when Zsh is installed. |
 
