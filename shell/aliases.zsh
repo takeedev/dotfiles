@@ -36,6 +36,11 @@ alias la="ls -A"
 alias l="ls -CF"
 
 #Navigate file
+alias home="cd ~"
+alias desk="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+alias docs="cd ~/Documents"
+alias projects="cd ~/Public/project"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
